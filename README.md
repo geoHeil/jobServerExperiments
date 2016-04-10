@@ -27,7 +27,8 @@ Based on [https://github.com/spark-jobserver/spark-jobserver/blob/master/job-ser
   
     ```
     WORKS (but no sql context) curl -d "input.string = a b c a b see" "192.168.99.100:8091/jobs?appName=fun&classPath=fun.WordCountExample&sync=true"
-    FAILS (sql context) curl -d "sql = \"select * from addresses limit 10\"" "192.168.99.100:8091/jobs?appName=fun&classPath=fun.SqlLoaderJob&context=sql-context&sync=true"
+    somehow works (sql context) curl -d "sql = \"select * from addresses limit 10\"" "192.168.99.100:8091/jobs?appName=fun&classPath=fun.SqlLoaderJob&context=sql-context&sync=true"
+    somehow works (sql context) curl -d "sql = \"select * from addresses limit 10\"" "192.168.99.100:8091/jobs?appName=fun&classPath=fun.SqlTestJob&context=sql-context&sync=true"
     ```
  
  # Problems

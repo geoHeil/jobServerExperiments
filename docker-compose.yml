@@ -1,0 +1,6 @@
+version: '2'
+services:
+  spark-jobserver-stable:
+    image: velvia/spark-jobserver:0.6.1.mesos-0.25.0.spark-1.5.2
+    ports:
+      - 8091:8090
